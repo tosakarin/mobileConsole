@@ -1,10 +1,11 @@
 package com.acedata.entity;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 
 /**
@@ -13,7 +14,8 @@ import javax.persistence.GeneratedValue;
 @Data
 @Entity
 public class Employee {
-    private  @Id @GeneratedValue
+    private  @Id
+    @GeneratedValue
     Long id;
     private String firstName;
     private String lastName;
